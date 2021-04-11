@@ -20,3 +20,4 @@ jobs:
           plugin_languages: true
           plugin_languages_limit: 100
           plugin_languages_details: percentage
+          plugin_lines: true
