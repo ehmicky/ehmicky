@@ -15,3 +15,4 @@ jobs:
           retries: 10
           repositories_affiliations: owner, collaborator
           base: header, activity
+          plugin_achievements: true
