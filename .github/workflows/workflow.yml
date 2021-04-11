@@ -17,8 +17,5 @@ jobs:
           base: ""
           plugin_achievements: true
           plugin_achievements_ignored: stargazer, developer, forker, member, explorer, automater, infographile
-          plugin_languages: true
-          plugin_languages_limit: 100
-          plugin_languages_details: percentage
           plugin_lines: true
           plugin_notable: true
