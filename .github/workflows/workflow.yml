@@ -17,6 +17,5 @@ jobs:
           base: ""
           plugin_achievements: true
           plugin_achievements_ignored: stargazer, developer, forker, member, explorer, automater, infographile
-          plugin_lines: true
-          plugin_notable: true
           plugin_reactions: true
+          plugin_reactions_limit: 1000
