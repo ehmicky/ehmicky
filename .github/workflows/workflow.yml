@@ -12,4 +12,5 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           repositories: 1000
-          repositories_affiliations: ""
+          retries: 10
+          repositories_affiliations: owner, collaborator
