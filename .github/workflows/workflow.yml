@@ -14,5 +14,9 @@ jobs:
           repositories: 1000
           retries: 10
           repositories_affiliations: owner, collaborator
-          base: header, activity
+          base: ""
           plugin_achievements: true
+          plugin_achievements_ignored: stargazer, developer, forker, member, explorer, automater, infographile
+          plugin_languages: true
+          plugin_languages_limit: 100
+          plugin_languages_details: percentage
