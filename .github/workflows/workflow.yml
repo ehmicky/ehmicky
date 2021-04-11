@@ -14,3 +14,4 @@ jobs:
           repositories: 1000
           retries: 10
           repositories_affiliations: owner, collaborator
+          base: header, activity
