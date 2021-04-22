@@ -1190,7 +1190,7 @@
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="320.22999999999996 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="320.54 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g stroke-linecap="round" stroke-width="2" fill="none" fill-rule="evenodd">
@@ -1218,7 +1218,7 @@
                                     Super reviewer
                                 </div>
                                 <div class="text">
-                                    Reviewed 1533 pull requests
+                                    Reviewed 1534 pull requests
                                 </div>
                             </div>
                         </div>
@@ -1392,7 +1392,7 @@
                                 <div class="title">
                                     Great influencer
                                     <span class="gh">
-                                        ranked 21.5k out of 70m users
+                                        ranked 21.6k out of 70m users
                                     </span>
                                 </div>
                                 <div class="text">
