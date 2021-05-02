@@ -2,8 +2,7 @@
     <defs>
         <style/>
     </defs>
-    <style>
-        /* SVG global context */
+    <style>/* SVG global context */
   svg {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
     font-size: 14px;
@@ -160,6 +159,22 @@
 
   .field.language.details &gt; *, .field.language.details small &gt; * {
     flex: 1 1 0;
+  }
+
+/* Follow-up */
+  .followup.legend {
+    font-size: 12px;
+  }
+  .followup.legend svg {
+    margin: 0 3px;
+    width: 14px;
+    height: 14px;
+  }
+  .followup.legend svg:first-child {
+    margin-left: 0;
+  }
+  .followup.legend svg:last-child {
+    margin-right: 0;
   }
 
 /* Labels */
@@ -615,7 +630,7 @@
     white-space: nowrap;
   }
 
-  .activity .details .comment {
+  .activity .details &gt; .comment {
     overflow: hidden;
     text-overflow: ellipsis;
     display: block;
@@ -623,7 +638,6 @@
     margin-top: 6px;
     border-left: 3px solid #777777B2;
     padding-left: 6px;
-    max-height: 38px;
     /* May not work in all browsers */
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -945,6 +959,48 @@
     overflow: hidden;
   }
 
+/* Markdown and syntax highlighting */
+  .markdown b, .markdown i {
+    display: inline-block;
+    width: 97%;
+  }
+  code {
+    background-color: #7777771F;
+    display: inline-block;
+    border-radius: 6px;
+    color: #777777;
+    padding: 1px 5px;
+    font-size: 80%;
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  }
+  code[class^=language-] {
+    white-space: pre-wrap;
+    width: 97%;
+    margin-top: 4px;
+  }
+  .token.comment {
+    color: #669900;
+  }
+  .token.punctuation {
+    color: #8a93a8;
+  }
+  .token.namespace, .token.constant, .token.symbol, .token.keyword {
+    color: #b44418;
+  }
+  .token.regex, .token.string, .token.char, .token.number, .token.boolean {
+    color: #2777AA;
+  }
+  .token.property, .token.tag {
+    color: #48428a;
+  }
+  .token.builtin, .token.operator {
+    color: #106cbc;
+  }
+  .token.trimmed {
+    font-style: italic;
+    color: #77777760
+  }
+
 /* Charts */
   .ct-line {
     stroke-width: 2px !important;
@@ -1036,19 +1092,14 @@
     animation-duration: 0s !important;
     animation-play-state: paused !important;
     caret-color: transparent !important;
-  }
-    </style>
+  }</style>
     <foreignObject x="0" y="0" width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <div class="row">
-            </div>
             <section>
                 <h2 class="field">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                        <path fill-rule="evenodd" d="M1.5 2.75a.25.25 0 01.25-.25h8.5a.25.25 0 01.25.25v5.5a.25.25 0 01-.25.25h-3.5a.75.75 0 00-.53.22L3.5 11.44V9.25a.75.75 0 00-.75-.75h-1a.25.25 0 01-.25-.25v-5.5zM1.75 1A1.75 1.75 0 000 2.75v5.5C0 9.216.784 10 1.75 10H2v1.543a1.457 1.457 0 002.487 1.03L7.061 10h3.189A1.75 1.75 0 0012 8.25v-5.5A1.75 1.75 0 0010.25 1h-8.5zM14.5 4.75a.25.25 0 00-.25-.25h-.5a.75.75 0 110-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0114.25 12H14v1.543a1.457 1.457 0 01-2.487 1.03L9.22 12.28a.75.75 0 111.06-1.06l2.22 2.22v-2.19a.75.75 0 01.75-.75h1a.25.25 0 00.25-.25v-5.5z"/>
-                    </svg>
-                    Overall users reactions from last 1000 comments
-                </h2>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M1.5 2.75a.25.25 0 01.25-.25h8.5a.25.25 0 01.25.25v5.5a.25.25 0 01-.25.25h-3.5a.75.75 0 00-.53.22L3.5 11.44V9.25a.75.75 0 00-.75-.75h-1a.25.25 0 01-.25-.25v-5.5zM1.75 1A1.75 1.75 0 000 2.75v5.5C0 9.216.784 10 1.75 10H2v1.543a1.457 1.457 0 002.487 1.03L7.061 10h3.189A1.75 1.75 0 0012 8.25v-5.5A1.75 1.75 0 0010.25 1h-8.5zM14.5 4.75a.25.25 0 00-.25-.25h-.5a.75.75 0 110-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0114.25 12H14v1.543a1.457 1.457 0 01-2.487 1.03L9.22 12.28a.75.75 0 111.06-1.06l2.22 2.22v-2.19a.75.75 0 01.75-.75h1a.25.25 0 00.25-.25v-5.5z"/></svg>
+      Overall users reactions from last 1000 comments
+    </h2>
                 <div class="row">
                     <section>
                         <div class="row fill-width">
@@ -1057,71 +1108,55 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge info">
                                         <circle class="gauge-base" r="53" cx="60" cy="60"/>
                                         <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="22.339506172839506 329"/>
-                                        <text x="60" y="60" dominant-baseline="central">
-                                            ❤️
-                                        </text>
+                                        <text x="60" y="60" dominant-baseline="central">❤️</text>
                                     </svg>
                                 </div>
                                 <div class="categorie column">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge info">
                                         <circle class="gauge-base" r="53" cx="60" cy="60"/>
                                         <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="294.4753086419753 329"/>
-                                        <text x="60" y="60" dominant-baseline="central">
-                                            👍
-                                        </text>
+                                        <text x="60" y="60" dominant-baseline="central">👍</text>
                                     </svg>
                                 </div>
                                 <div class="categorie column">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge info">
                                         <circle class="gauge-base" r="53" cx="60" cy="60"/>
                                         <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="2.030864197530864 329"/>
-                                        <text x="60" y="60" dominant-baseline="central">
-                                            👎
-                                        </text>
+                                        <text x="60" y="60" dominant-baseline="central">👎</text>
                                     </svg>
                                 </div>
                                 <div class="categorie column">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge info">
                                         <circle class="gauge-base" r="53" cx="60" cy="60"/>
                                         <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="4.061728395061728 329"/>
-                                        <text x="60" y="60" dominant-baseline="central">
-                                            😄
-                                        </text>
+                                        <text x="60" y="60" dominant-baseline="central">😄</text>
                                     </svg>
                                 </div>
                                 <div class="categorie column">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge info">
                                         <circle class="gauge-base" r="53" cx="60" cy="60"/>
                                         <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="2.030864197530864 329"/>
-                                        <text x="60" y="60" dominant-baseline="central">
-                                            😕
-                                        </text>
+                                        <text x="60" y="60" dominant-baseline="central">😕</text>
                                     </svg>
                                 </div>
                                 <div class="categorie column">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge info">
                                         <circle class="gauge-base" r="53" cx="60" cy="60"/>
                                         <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="1.015432098765432 329"/>
-                                        <text x="60" y="60" dominant-baseline="central">
-                                            👀
-                                        </text>
+                                        <text x="60" y="60" dominant-baseline="central">👀</text>
                                     </svg>
                                 </div>
                                 <div class="categorie column">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge info">
                                         <circle class="gauge-base" r="53" cx="60" cy="60"/>
-                                        <text x="60" y="60" dominant-baseline="central">
-                                            🚀
-                                        </text>
+                                        <text x="60" y="60" dominant-baseline="central">🚀</text>
                                     </svg>
                                 </div>
                                 <div class="categorie column">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge info">
                                         <circle class="gauge-base" r="53" cx="60" cy="60"/>
                                         <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="3.0462962962962963 329"/>
-                                        <text x="60" y="60" dominant-baseline="central">
-                                            🎉
-                                        </text>
+                                        <text x="60" y="60" dominant-baseline="central">🎉</text>
                                     </svg>
                                 </div>
                             </section>
@@ -1131,11 +1166,9 @@
             </section>
             <section>
                 <h2 class="field">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                        <path d="M8.5.75a.75.75 0 00-1.5 0v5.19L4.391 3.33a.75.75 0 10-1.06 1.061L5.939 7H.75a.75.75 0 000 1.5h5.19l-2.61 2.609a.75.75 0 101.061 1.06L7 9.561v5.189a.75.75 0 001.5 0V9.56l2.609 2.61a.75.75 0 101.06-1.061L9.561 8.5h5.189a.75.75 0 000-1.5H9.56l2.61-2.609a.75.75 0 00-1.061-1.06L8.5 5.939V.75z"/>
-                    </svg>
-                    Achievements
-                </h2>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8.5.75a.75.75 0 00-1.5 0v5.19L4.391 3.33a.75.75 0 10-1.06 1.061L5.939 7H.75a.75.75 0 000 1.5h5.19l-2.61 2.609a.75.75 0 101.061 1.06L7 9.561v5.189a.75.75 0 001.5 0V9.56l2.609 2.61a.75.75 0 101.06-1.061L9.561 8.5h5.189a.75.75 0 000-1.5H9.56l2.61-2.609a.75.75 0 00-1.061-1.06L8.5 5.939V.75z"/></svg>
+      Achievements
+    </h2>
                 <div class="row">
                     <section>
                         <div class="achievement a">
@@ -1173,11 +1206,10 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                                    Super contributor
-                                </div>
-                                <div class="text">
-                                    Opened 2701 pull requests
-                                </div>
+                  Super contributor
+                  
+                </div>
+                                <div class="text">Opened 2701 pull requests</div>
                             </div>
                         </div>
                         <div class="achievement a">
@@ -1215,11 +1247,10 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                                    Super reviewer
-                                </div>
-                                <div class="text">
-                                    Reviewed 1598 pull requests
-                                </div>
+                  Super reviewer
+                  
+                </div>
+                                <div class="text">Reviewed 1598 pull requests</div>
                             </div>
                         </div>
                         <div class="achievement a">
@@ -1248,11 +1279,10 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                                    Super polyglot
-                                </div>
-                                <div class="text">
-                                    Using 13 different programming languages
-                                </div>
+                  Super polyglot
+                  
+                </div>
+                                <div class="text">Using 13 different programming languages</div>
                             </div>
                         </div>
                         <div class="achievement b">
@@ -1286,14 +1316,14 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                                    Great maintainer
-                                    <span class="gh">
-                                        ranked 6.97k out of 227m repositories
-                                    </span>
-                                </div>
-                                <div class="text">
-                                    Maintaining a repository with 3819 stars
-                                </div>
+                  Great maintainer
+                  
+                    <span class="gh">
+                      ranked 6.97k out of 227m repositories
+                    </span>
+                  
+                </div>
+                                <div class="text">Maintaining a repository with 3819 stars</div>
                             </div>
                         </div>
                         <div class="achievement b">
@@ -1335,14 +1365,14 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                                    Great inspirationer
-                                    <span class="gh">
-                                        ranked 32.5k out of 227m repositories
-                                    </span>
-                                </div>
-                                <div class="text">
-                                    Maintaining a repository which has been forked 240 times
-                                </div>
+                  Great inspirationer
+                  
+                    <span class="gh">
+                      ranked 32.5k out of 227m repositories
+                    </span>
+                  
+                </div>
+                                <div class="text">Maintaining a repository which has been forked 240 times</div>
                             </div>
                         </div>
                         <div class="achievement b">
@@ -1390,14 +1420,14 @@
                             </div>
                             <div class="info">
                                 <div class="title">
-                                    Great influencer
-                                    <span class="gh">
-                                        ranked 21.3k out of 70m users
-                                    </span>
-                                </div>
-                                <div class="text">
-                                    Followed by 209 users
-                                </div>
+                  Great influencer
+                  
+                    <span class="gh">
+                      ranked 21.3k out of 70m users
+                    </span>
+                  
+                </div>
+                                <div class="text">Followed by 209 users</div>
                             </div>
                         </div>
                     </section>
