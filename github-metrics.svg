@@ -1181,7 +1181,7 @@
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="709.28 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="709.9 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g stroke-width="2" fill="none" fill-rule="evenodd">
@@ -1209,7 +1209,7 @@
                   Super contributor
                   
                 </div>
-                                <div class="text">Opened 2788 pull requests</div>
+                                <div class="text">Opened 2790 pull requests</div>
                             </div>
                         </div>
                         <div class="achievement a">
@@ -1368,7 +1368,7 @@
                   Great inspirationer
                   
                     <span class="gh">
-                      ranked 32.1k out of 231m repositories
+                      ranked 32.2k out of 231m repositories
                     </span>
                   
                 </div>
