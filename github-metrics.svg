@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="468" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="508" class="">
     <defs>
         <style/>
     </defs>
@@ -175,6 +175,61 @@
     font-size: 12px;
     background-color: #959da520;
   }
+  .contribution.organization.s {
+    color: #EB355E;
+    background-color: #EB355E26;
+    border-color: #EB355E;
+  }
+  .contribution.organization.a {
+    color: #D79533;
+    background-color: #E7BD6926;
+    border-color: #E7BD69;
+  }
+  .contribution.organization.b {
+    color: #9D8FFF;
+    background-color: #9E91FF26;
+    border-color: #9E91FF;
+  }
+  .contribution.organization.c {
+    color: #58A6FF;
+    background-color: #58A6FF26;
+    border-color: #58A6FF;
+  }
+  .contribution .gauge-base, .contribution .gauge-arc {
+    stroke: currentColor;
+    stroke-width: 4;
+  }
+  .contribution .gauge text {
+    fill: currentColor;
+    font-size: 12px;
+    font-size: 15px;
+    letter-spacing: -2px;
+  }
+  .contribution .gauge {
+    margin: 0 4px;
+    color: inherit;
+  }
+  .contribution .commits-icon {
+    fill: currentColor;
+    width: 10px;
+    height: 10px;
+    margin-left: -9px;
+    margin-top: 8px;
+    color: inherit;
+    filter: brightness(.5);
+  }
+  .contribution.s .side {
+    background-color: #EB355E26;
+  }
+  .contribution.a .side {
+    background-color: #E7BD6926;
+  }
+  .contribution.b .side {
+    background-color: #9E91FF26;
+  }
+  .contribution.c .side {
+    background-color: #58A6FF26;
+  }
 
   .contribution.organization .avatar {
     margin: 0 4px;
@@ -223,6 +278,12 @@
 /* Follow-up */
   .followup.legend {
     font-size: 12px;
+    flex-wrap: wrap;
+  }
+  .followup.legend .field {
+    width: 46%;
+    justify-content: flex-start;
+    margin-left: 8px;
   }
   .followup.legend svg {
     margin: 0 3px;
@@ -1335,14 +1396,68 @@
             <section>
                 <h2 class="field">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M1.5 2.75a.25.25 0 01.25-.25h8.5a.25.25 0 01.25.25v5.5a.25.25 0 01-.25.25h-3.5a.75.75 0 00-.53.22L3.5 11.44V9.25a.75.75 0 00-.75-.75h-1a.25.25 0 01-.25-.25v-5.5zM1.75 1A1.75 1.75 0 000 2.75v5.5C0 9.216.784 10 1.75 10H2v1.543a1.457 1.457 0 002.487 1.03L7.061 10h3.189A1.75 1.75 0 0012 8.25v-5.5A1.75 1.75 0 0010.25 1h-8.5zM14.5 4.75a.25.25 0 00-.25-.25h-.5a.75.75 0 110-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0114.25 12H14v1.543a1.457 1.457 0 01-2.487 1.03L9.22 12.28a.75.75 0 111.06-1.06l2.22 2.22v-2.19a.75.75 0 01.75-.75h1a.25.25 0 00.25-.25v-5.5z"/></svg>
-      Overall users reactions from last  comments
+      Overall users reactions from last 1000 comments
     </h2>
                 <div class="row">
                     <section>
-                        <div class="field error">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M2.343 13.657A8 8 0 1113.657 2.343 8 8 0 012.343 13.657zM6.03 4.97a.75.75 0 00-1.06 1.06L6.94 8 4.97 9.97a.75.75 0 101.06 1.06L8 9.06l1.97 1.97a.75.75 0 101.06-1.06L9.06 8l1.97-1.97a.75.75 0 10-1.06-1.06L8 6.94 6.03 4.97z"/></svg>
-            An error occured
-          </div>
+                        <div class="row fill-width">
+                            <section class="categories">
+                                <div class="category column">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge info">
+                                        <circle class="gauge-base" r="53" cx="60" cy="60"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="90.59420289855072 329"/>
+                                        <text x="60" y="60" dominant-baseline="central">❤️</text>
+                                    </svg>
+                                </div>
+                                <div class="category column">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge info">
+                                        <circle class="gauge-base" r="53" cx="60" cy="60"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="165.9304347826087 329"/>
+                                        <text x="60" y="60" dominant-baseline="central">👍</text>
+                                    </svg>
+                                </div>
+                                <div class="category column">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge info">
+                                        <circle class="gauge-base" r="53" cx="60" cy="60"/>
+                                        <text x="60" y="60" dominant-baseline="central">👎</text>
+                                    </svg>
+                                </div>
+                                <div class="category column">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge info">
+                                        <circle class="gauge-base" r="53" cx="60" cy="60"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="3.8144927536231883 329"/>
+                                        <text x="60" y="60" dominant-baseline="central">😄</text>
+                                    </svg>
+                                </div>
+                                <div class="category column">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge info">
+                                        <circle class="gauge-base" r="53" cx="60" cy="60"/>
+                                        <text x="60" y="60" dominant-baseline="central">😕</text>
+                                    </svg>
+                                </div>
+                                <div class="category column">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge info">
+                                        <circle class="gauge-base" r="53" cx="60" cy="60"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="1.9072463768115941 329"/>
+                                        <text x="60" y="60" dominant-baseline="central">👀</text>
+                                    </svg>
+                                </div>
+                                <div class="category column">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge info">
+                                        <circle class="gauge-base" r="53" cx="60" cy="60"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="11.443478260869565 329"/>
+                                        <text x="60" y="60" dominant-baseline="central">🚀</text>
+                                    </svg>
+                                </div>
+                                <div class="category column">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge info">
+                                        <circle class="gauge-base" r="53" cx="60" cy="60"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="55.31014492753623 329"/>
+                                        <text x="60" y="60" dominant-baseline="central">🎉</text>
+                                    </svg>
+                                </div>
+                            </section>
+                        </div>
                     </section>
                 </div>
             </section>
