@@ -19,3 +19,6 @@ jobs:
           plugin_achievements_ignored: stargazer, developer, forker, member, explorer, automater, infographile
           plugin_reactions: true
           plugin_reactions_limit: 1000
+          plugin_stargazers: true
+          plugin_languages: true
+          plugin_topics: true
