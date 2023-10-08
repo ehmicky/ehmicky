@@ -16,7 +16,7 @@ jobs:
           repositories_affiliations: owner, collaborator
           base: ""
           plugin_achievements: true
-          plugin_achievements_ignored: stargazer, developer, forker, member, explorer, automater, infographile
+          plugin_achievements_ignored: stargazer, developer, forker, member, explorer, automator, infographile, reviewer
           plugin_reactions: true
           plugin_reactions_limit: 1000
           plugin_topics: true
