@@ -19,9 +19,10 @@ jobs:
           plugin_achievements_ignored: developer, forker, member, explorer, automator, infographile, reviewer, chatter
           plugin_notable: true
           plugin_notable_indepth: true
+          plugin_notable_repositories: true
           plugin_notable_from: all
           plugin_notable_types: commit, pull_request
-          plugin_notable_filter: stars:>10
+          plugin_notable_filter: stars:>100
           plugin_reactions: true
           plugin_reactions_limit: 1000
           plugin_topics: true
