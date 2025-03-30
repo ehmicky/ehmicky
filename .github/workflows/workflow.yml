@@ -21,8 +21,8 @@ jobs:
           plugin_notable_repositories: true
           plugin_notable_from: all
           plugin_notable_types: commit, pull_request
-          plugin_notable_filter: stars:>200 commits:>5
-          plugin_notable_skipped: "@lycheeverse/lychee, @mafintosh/streamx, @sindresorhus/execa"
+          plugin_notable_filter: stars:>300
+          plugin_notable_skipped: "lychee, streamx, execa"
           plugin_reactions: true
           plugin_reactions_limit: 1000
           plugin_topics: true
