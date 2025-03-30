@@ -8,7 +8,10 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      # TODO: re-use original repository once this is fixed:
+      #   https://github.com/lowlighter/metrics/issues/1706
+      # - uses: lowlighter/metrics@latest
+      - uses: stalomeow/metrics@projects-v2
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           repositories: 1000
@@ -16,10 +19,8 @@ jobs:
           repositories_affiliations: owner, collaborator
           base: ""
           config_order: reactions, achievements, topics, notable
-          # TODO: enable once this is fixed:
-          #   https://github.com/lowlighter/metrics/issues/1706
-          # plugin_achievements: true
-          # plugin_achievements_ignored: developer, forker, member, explorer, automator, infographile, reviewer, chatter
+          plugin_achievements: true
+          plugin_achievements_ignored: developer, forker, member, explorer, automator, infographile, reviewer, chatter
           plugin_notable: true
           plugin_notable_repositories: true
           plugin_notable_from: all
