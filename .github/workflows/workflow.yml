@@ -17,7 +17,7 @@ jobs:
           base: ""
           config_order: reactions, achievements, topics, notable
           plugin_achievements: true
-          plugin_achievements_ignored: developer, forker, member, explorer, automator, infographile, reviewer, chatter
+          plugin_achievements_ignored: developer, forker, member, explorer, automator, infographile, reviewer, chatter, manager
           plugin_notable: true
           plugin_notable_repositories: true
           plugin_notable_from: all
