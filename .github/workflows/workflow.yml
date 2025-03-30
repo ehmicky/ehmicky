@@ -15,13 +15,14 @@ jobs:
           retries: 10
           repositories_affiliations: owner, collaborator
           base: ""
+          config_order: reactions, achievements, topics, notable
           plugin_achievements: true
           plugin_achievements_ignored: developer, forker, member, explorer, automator, infographile, reviewer, chatter
           plugin_notable: true
           plugin_notable_repositories: true
           plugin_notable_from: all
           plugin_notable_types: commit, pull_request
-          plugin_notable_filter: stars:>100
+          plugin_notable_filter: stars:>200
           plugin_notable_skipped: "lychee, streamx, execa, yoctocolors, pretty-ms"
           plugin_reactions: true
           plugin_reactions_limit: 1000
