@@ -10,8 +10,8 @@ jobs:
     steps:
       # TODO: re-use original repository once this is fixed:
       #   https://github.com/lowlighter/metrics/issues/1706
-      # - uses: lowlighter/metrics@latest
-      - uses: stalomeow/metrics@projects-v2
+      - uses: lowlighter/metrics@latest
+        # - uses: stalomeow/metrics@projects-v2
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           repositories: 1000
